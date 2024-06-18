@@ -1,0 +1,22 @@
+.sortParams {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.sortFilter {
+  height: 42px;
+  max-width: 246px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.sortBy {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+}

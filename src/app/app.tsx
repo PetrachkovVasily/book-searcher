@@ -1,12 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import BookListPage from 'src/components/bookListPage/BookListPage';
 import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import Header from 'src/components/header/Header';
+import ItemPage from 'src/components/itemPage/ItemPage';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="book-searcher" />
+      <Header/>
+      <ItemPage/>
+      {/* <BookListPage/> */}
     </div>
   );
 }

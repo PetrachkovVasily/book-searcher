@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 291px;
+  background-color: #555555;
+}
+
+.innerHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+  padding-top: 31px;
+  color: #ffffff;
+  width: inherit;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.headerH {
+  font-size: 54px;
+  padding: 0;
+  margin: 0;
+}
+
+.searchBlock {
+  max-width: 751px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.sortBlock {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+  width: 100%;
+}

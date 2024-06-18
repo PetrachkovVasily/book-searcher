@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body .PageCard_card__o75Hh .Book_bookImg__HhjST {
+  width: 162px;
+  height: 234px;
+}

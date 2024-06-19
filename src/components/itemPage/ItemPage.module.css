@@ -23,7 +23,43 @@ main {
 .descriptionContainer {
   width: 65%;
   display: flex;
-  flex-direction: start;
+  flex-direction: column;
   gap: 38px;
-  padding-top: 56px;
+  padding: 56px;
+}
+
+.decoratedHeader {
+  font-size: 18px;
+  color: #939393;
+  text-decoration: underline;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.bookName {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.nameDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details {
+  width: 100%;
+  margin: 0;
+  min-height: 224px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 18px;
+  border: #939393 solid 1px;
 }

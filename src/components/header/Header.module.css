@@ -40,3 +40,20 @@ header {
   gap: 27px;
   width: 100%;
 }
+
+@media screen and (max-width: 530px) {
+  .sortBlock {
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .headerH {
+    font-size: 32px;
+  }
+
+  .innerHeader {
+    gap: 24px;
+    padding-top: 16px;
+  }
+}

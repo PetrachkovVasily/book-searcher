@@ -3,7 +3,7 @@ import classes from './ItemPage.module.css'
 
 export function ItemPage() {
   return (
-    <main>
+    <main className={classes.itemPage}>
       <div className={classes.pageContainer}>
         <div className={classes.imgContainer}>
           <Book/>

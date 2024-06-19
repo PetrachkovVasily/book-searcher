@@ -8,15 +8,27 @@
 .sortFilter {
   height: 42px;
   max-width: 246px;
+  padding-right: 6px;
+  padding-left: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: white;
+  color: #76889C;
+  font-size: 24px;
+  outline: #76889C;
 }
 
 .sortBy {
   margin: 0;
   padding: 0;
   font-size: 21px;
+}
+
+@media screen and (max-width: 530px) {
+  .sortFilter {
+    font-size: 21px;
+  }
+  
 }

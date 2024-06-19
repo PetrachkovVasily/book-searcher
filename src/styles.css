@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: inter;
+  src: url(./assets/Inter-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: inter;
   letter-spacing: 0.03em;
 }
 
@@ -14,4 +19,24 @@ body {
 body .PageCard_card__o75Hh .Book_bookImg__HhjST {
   width: 162px;
   height: 234px;
+}
+
+body .PageCard_card__o75Hh .Book_book__9osoc {
+  width: 100%;
+  align-items: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 990px) {
+  body .PageCard_card__o75Hh .Book_bookImg__HhjST {
+    width: 135px;
+    height: 195px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body .PageCard_card__o75Hh .Book_bookImg__HhjST {
+    width: 29.52vw;
+    height: 42.62vw;
+  }
 }

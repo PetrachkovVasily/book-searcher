@@ -1,9 +1,21 @@
 .searchBar {
   height: 45px;
-  width: calc(100% - 80px);
+  width: 100%;
+  max-width: 671px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: white;
+  align-items: center;
 }
 
 .searchField {
   width: 100%;
   height: 100%;
+  border: none;
+  outline: none;
+  font-size: 24px;
 }

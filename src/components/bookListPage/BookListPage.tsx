@@ -3,7 +3,7 @@ import PageCard from './PageCard/PageCard';
 
 export function BookListPage() {
   return (
-    <main>
+    <main className={classes.bookListPage}>
       <h2 className={classes.foundHeader}>Found 456 results</h2>
       <div className={classes.pageCards}>
         <PageCard/>

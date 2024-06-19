@@ -4,12 +4,25 @@ import styles from './app.module.css';
 import Header from 'src/components/header/Header';
 import ItemPage from 'src/components/itemPage/ItemPage';
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
+
 export function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <BookListPage/>,
+    },
+    {
+      path: '/item',
+      element: <ItemPage/>,
+    },
+]);
+
   return (
     <div>
       <Header/>
-      <ItemPage/>
-      {/* <BookListPage/> */}
+      <RouterProvider router = {router} />
     </div>
   );
 }

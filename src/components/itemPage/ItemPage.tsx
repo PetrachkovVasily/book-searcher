@@ -3,7 +3,6 @@ import classes from './ItemPage.module.css'
 import { useEffect, useState } from 'react';
 import { getBooksByID } from 'src/utils/API/booksAPI';
 import ItemContent from './ItemContent/ItemContent';
-import { ItemContentProps } from 'src/constants/types/ItemContentType';
 
 export function ItemPage() {
   const {id} = useParams();

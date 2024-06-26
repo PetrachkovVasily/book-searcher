@@ -5,11 +5,11 @@ export function SearchParams({name, params}: SearchParamsProps) {
   return (
     <div className={classes.sortParams}>
       <h3 className={classes.sortBy}>Categories</h3>
-      <select name="name" className={classes.sortFilter}>
+      <select name={name} className={classes.sortFilter}>
         {
           params.map(param => {
             return (
-              <option key={param} value="param">{param}</option>
+              <option key={param} value={param}>{param}</option>
             )
           })
         }

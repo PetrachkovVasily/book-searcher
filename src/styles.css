@@ -4,6 +4,14 @@
   src: url(./assets/Inter-Regular.ttf);
 }
 
+:root {
+  --hungredPercents: 100%;
+  --grey: #555555;
+  --light_grey: #939393;
+  --bg_grey: #F3F2F1;
+  --light_blue: #76889C;
+}
+
 * {
   box-sizing: border-box;
   font-family: inter;

@@ -1,8 +1,7 @@
 .book {
   width: 45vw;
-  height: 100%;
+  height: var(--hungredPercents);
   display: flex;
-  /* align-items: center; */
   padding-bottom: 38px;
   padding-top: 38px;
   justify-content: center;
@@ -10,13 +9,9 @@
 
 .bookImg {
   width: 334px;
-  height: 483px;
-  
-  /* width: 23.2vw;
-  height: 33.54vw; */
-  
+  height: 483px;  
   object-fit: cover;
-  box-shadow: 12px 15px 21px rgb(151, 151, 151);
+  box-shadow: 12px 15px 21px var(--light_grey);
 }
 
 @media screen and (max-width: 910px) {
@@ -28,7 +23,7 @@
 
 @media screen and (max-width: 800px) {
   .book {
-    width: 100%;
+    width: var(--hungredPercents);
   }
 
   .bookImg {

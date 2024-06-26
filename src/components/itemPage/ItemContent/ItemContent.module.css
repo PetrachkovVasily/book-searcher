@@ -1,7 +1,7 @@
 .imgContainer {
-  height: 100%;
+  height: var(--hungredPercents);
   width: 45%;
-  background-color: #F3F2F1;
+  background-color: var(--bg_grey);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -29,13 +29,13 @@
 
 @media screen and (max-width: 800px) {
   .imgContainer {
-    width: 100%;
+    width: var(--hungredPercents);
     height: fit-content;
   }
 
   .descriptionContainer {
     padding: 24px;
-    width: 100%;
+    width: var(--hungredPercents);
     gap: 18px;
   }
 

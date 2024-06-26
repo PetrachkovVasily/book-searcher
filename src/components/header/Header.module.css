@@ -2,9 +2,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: var(--hungredPercents);
   height: 291px;
-  background-color: #555555;
+  background-color: var(--grey);
 }
 
 .innerHeader {
@@ -27,7 +27,7 @@ header {
 
 .searchBlock {
   max-width: 751px;
-  width: 100%;
+  width: var(--hungredPercents);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 27px;
-  width: 100%;
+  width: var(--hungredPercents);
 }
 
 @media screen and (max-width: 530px) {

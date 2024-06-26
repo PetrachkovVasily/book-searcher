@@ -1,8 +1,8 @@
 .decoratedDescription {
   font-size: 18px;
-  color: #939393;
+  color: var(--light_grey);
   text-decoration: underline;
-  width: 100%;
+  width: var(--hungredPercents);
   margin: 0;
   padding: 0;
   overflow: hidden;

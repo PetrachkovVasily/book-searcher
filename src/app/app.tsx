@@ -6,6 +6,7 @@ import { getBooks } from 'src/utils/API/booksAPI';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
 import { useEffect, useState } from 'react';
+import { HOME_PATH, ID, ITEM_PATH } from 'src/constants/notes/routesPath';
 
 export function App() {
 
@@ -19,11 +20,11 @@ export function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: HOME_PATH,
       element: <BookListPage books={books}/>,
     },
     {
-      path: '/item/:id',
+      path: ITEM_PATH + ID,
       element: <ItemPage/>,
     },
 ]);

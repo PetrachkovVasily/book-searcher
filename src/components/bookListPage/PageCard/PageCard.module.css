@@ -1,7 +1,10 @@
 .card {
   width: 100%;
   max-width: 312px;
-  height: 472px;
+  min-height: 472px;
+  height: fit-content;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +53,7 @@
 
 @media screen and (max-width: 990px) {
   .card {
-    height: 390px;
+    min-height: 390px;
     padding-top: 9px;
   }
 
@@ -65,6 +68,6 @@
 
 @media screen and (max-width: 420px) {
   .card {
-    height: calc(42.62vw + 156px);
+    min-height: calc(42.62vw + 156px);
   }
 }

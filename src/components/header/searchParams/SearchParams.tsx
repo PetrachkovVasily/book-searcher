@@ -1,13 +1,18 @@
+import { SearchParamsProps } from 'src/constants/types/SearchParamsProps';
 import classes from './SearchParams.module.css'
 
-export function SearchParams() {
+export function SearchParams({name, params}: SearchParamsProps) {
   return (
     <div className={classes.sortParams}>
       <h3 className={classes.sortBy}>Categories</h3>
-      <select id="options" name="fruits" className={classes.sortFilter}>
-        <option value="apple">apple</option>
-        <option value="banana">banana</option>
-        <option value="orange">orange</option>
+      <select name="name" className={classes.sortFilter}>
+        {
+          params.map(param => {
+            return (
+              <option key={param} value="param">{param}</option>
+            )
+          })
+        }
       </select>
     </div>
   );

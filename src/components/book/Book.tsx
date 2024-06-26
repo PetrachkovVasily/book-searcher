@@ -1,9 +1,10 @@
 import classes from './Book.module.css'
+import { StringType } from 'src/constants/types/StringType';
 
-export function Book() {
+export function Book({image}: StringType) {
   return (
     <div className={classes.book}>
-      <img src="./assets/shark.jpg" alt="bookId!!!" className={classes.bookImg}/>
+      <img src={image} alt="bookImage" className={classes.bookImg}/>
     </div>
   );
 }

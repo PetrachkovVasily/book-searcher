@@ -1,3 +1,4 @@
+import { CATEGORIES, CATEGORIES_NAME, SORTS, SORTS_NAME } from 'src/constants/notes/categories';
 import classes from './Header.module.css'
 import SearchBar from './searchBar/SearchBar';
 import SearchParams from './searchParams/SearchParams';
@@ -10,8 +11,8 @@ export function Header() {
         <div className={classes.searchBlock}>
           <SearchBar/>
           <div className={classes.sortBlock}>
-            <SearchParams/>
-            <SearchParams/>
+            <SearchParams name={CATEGORIES_NAME} params={CATEGORIES}/>
+            <SearchParams name={SORTS_NAME} params={SORTS}/>
           </div>
         </div>
       </div>

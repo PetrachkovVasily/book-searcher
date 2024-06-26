@@ -10,7 +10,7 @@ export async function getBooks(filter: string, sort: string) {
   return response.data.items;
 }
 
-export async function getBooksByID(id: string) {
-  const response = await axios.get('https://www.googleapis.com/books/v1/volumes/-b0KEAAAQBAJ');
+export async function getBooksByID(id: string | undefined) {
+  const response = await axios.get('https://www.googleapis.com/books/v1/volumes/' + id);
   return response.data;
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 291px);
+  height: 100%;
   min-height: 588px;
 }
 
@@ -13,78 +13,9 @@
   max-width: 1440px;
 }
 
-.imgContainer {
-  height: 100%;
-  width: 45%;
-  background-color: #F3F2F1;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.descriptionContainer {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-  padding: 56px;
-}
-
-.decoratedHeader {
-  font-size: 18px;
-  color: #939393;
-  text-decoration: underline;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-}
-
-.bookName {
-  margin: 0;
-  padding: 0;
-  font-size: 30px;
-}
-
-.nameDescription {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.details {
-  width: 100%;
-  margin: 0;
-  height: fit-content;
-  min-height: 224px;
-  font-size: 20px;
-  text-align: justify;
-  padding: 18px;
-  border: #939393 solid 1px;
-}
-
 @media screen and (max-width: 800px) {
   .pageContainer {
     flex-direction: column;
     align-items: center;
-  }
-
-  .imgContainer {
-    width: 100%;
-    height: fit-content;
-  }
-
-  .descriptionContainer {
-    padding: 24px;
-    width: 100%;
-    gap: 18px;
-  }
-
-  .nameDescription {
-    gap: 8px;
   }
 }

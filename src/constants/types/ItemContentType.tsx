@@ -3,9 +3,7 @@ export type ItemContentProps = {
     id: string;
     volumeInfo: {
       authors: string[];
-      categories: {
-        [index: number]: string;
-      }
+      categories: string[];
       comicsContent: true
       description: string
       imageLinks: {

@@ -1,0 +1,19 @@
+.decoratedHeader {
+  font-size: 18px;
+  color: #939393;
+  text-decoration: underline;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.categoriesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

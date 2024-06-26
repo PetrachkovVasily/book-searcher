@@ -1,3 +1,3 @@
 export type StringType = {
-  image: string;
+  str: string;
 }

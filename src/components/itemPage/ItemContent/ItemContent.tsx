@@ -1,24 +1,23 @@
 import Book from 'src/components/book/Book';
 import classes from './ItemContent.module.css';
-import { PageCardProps } from 'src/constants/types/PageCardType';
 import { ItemContentProps } from 'src/constants/types/ItemContentType';
+import Authors from 'src/components/bookListPage/Authors/Authors';
+import Categories from '../Categories/Categories';
+import Description from '../Description/Description';
 
 export function ItemContent({book}: ItemContentProps) {
-  console.log(book[0]?.id)
   return (
     <>
       <div className={classes.imgContainer}>
-        <Book image='aaa'/>
+        <Book str={book[0]?.volumeInfo.imageLinks.thumbnail}/>
       </div>
       <div className={classes.descriptionContainer}>
-        <h3 className={classes.decoratedHeader}>Art/General</h3>
+        <Categories categories={book[0]?.volumeInfo.categories}/>
         <div className={classes.nameDescription}>
           <h2 className={classes.bookName}>{book[0]?.volumeInfo.title}</h2>
-          <h3 className={classes.decoratedHeader}>Author Name</h3>
+          <Authors authors={book[0]?.volumeInfo.authors}/>
         </div>
-        <p className={classes.details}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
+        <Description str={book[0]?.volumeInfo.description}/>
       </div>
     </>
   );

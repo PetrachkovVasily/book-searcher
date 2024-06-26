@@ -1,0 +1,10 @@
+.details {
+  width: 100%;
+  margin: 0;
+  height: fit-content;
+  min-height: 224px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 18px;
+  border: #939393 solid 1px;
+}

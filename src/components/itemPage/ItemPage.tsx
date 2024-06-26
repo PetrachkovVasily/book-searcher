@@ -6,15 +6,15 @@ import ItemContent from './ItemContent/ItemContent';
 import { ItemContentProps } from 'src/constants/types/ItemContentType';
 
 export function ItemPage() {
-  //const {id} = useParams();
+  const {id} = useParams();
   const [book, setBook] = useState([])
 
   useEffect(() => {
-    getBooksByID('jOZBEAAAQBAJ').then((item) => {
+    getBooksByID(id).then((item) => {
       item = [item]
       setBook(item)
     })
-  }, [])
+  }, [id])
 
   return (
     <main className={classes.itemPage}>

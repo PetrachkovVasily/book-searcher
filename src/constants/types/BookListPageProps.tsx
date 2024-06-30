@@ -1,12 +1,10 @@
 export type BookListPageProps = {
   books: {
-    id: string;
+    id: string
     volumeInfo: {
-      authors: string[];
-      categories: {
-        [index: number]: string;
-      }
-      comicsContent: true
+      authors: string[]
+      categories: string[]
+      comicsContent: boolean
       description: string
       imageLinks: {
         smallThumbnail: string

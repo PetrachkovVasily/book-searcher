@@ -5,14 +5,14 @@ import { PageCardProps } from 'src/constants/types/PageCardType';
 import Authors from '../Authors/Authors';
 import { ITEM_PATH } from 'src/constants/notes/routesPath';
 
-export function PageCard({id, info}: PageCardProps) {
+export function PageCard({id, volumeInfo}: PageCardProps) {
   return (
     <Link to={`${ITEM_PATH}${id}`} className={classes.card}>
-      <Book str={info.imageLinks.smallThumbnail}/>
+      <Book str={volumeInfo.imageLinks.smallThumbnail}/>
       <div className={classes.description}>
-        <h3 className={classes.decoratedDescription}>{info.categories[0]}</h3>
-        <h3 className={classes.bookName}>{info.title}</h3>
-        <Authors authors={info.authors}/>
+        <h3 className={classes.decoratedDescription}>{volumeInfo.categories[0]}</h3>
+        <h3 className={classes.bookName}>{volumeInfo.title}</h3>
+        <Authors authors={volumeInfo.authors}/>
       </div>
     </Link>
   );

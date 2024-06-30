@@ -6,11 +6,11 @@ import ItemContent from './ItemContent/ItemContent';
 
 export function ItemPage() {
   const {id} = useParams();
-  const [book, setBook] = useState([])
+  const [book, setBook] = useState()
 
   useEffect(() => {
     getBooksByID(id).then((item) => {
-      item = [item]
+      // item = [item]
       setBook(item)
     })
   }, [id])
@@ -18,7 +18,10 @@ export function ItemPage() {
   return (
     <main className={classes.itemPage}>
       <div className={classes.pageContainer}>
-        <ItemContent book={book}/>
+        {book===undefined
+          ? <h2>qwerty</h2>
+          : <ItemContent book={book}/>
+        }
       </div>
     </main>
   );

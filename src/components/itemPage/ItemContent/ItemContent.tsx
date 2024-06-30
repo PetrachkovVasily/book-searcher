@@ -9,15 +9,15 @@ export function ItemContent({book}: ItemContentProps) {
   return (
     <>
       <div className={classes.imgContainer}>
-        <Book str={book[0]?.volumeInfo.imageLinks.thumbnail}/>
+        <Book str={book.volumeInfo.imageLinks.thumbnail}/>
       </div>
       <div className={classes.descriptionContainer}>
-        <Categories categories={book[0]?.volumeInfo.categories}/>
+        <Categories categories={book.volumeInfo.categories}/>
         <div className={classes.nameDescription}>
-          <h2 className={classes.bookName}>{book[0]?.volumeInfo.title}</h2>
-          <Authors authors={book[0]?.volumeInfo.authors}/>
+          <h2 className={classes.bookName}>{book.volumeInfo.title}</h2>
+          <Authors authors={book.volumeInfo.authors}/>
         </div>
-        <Description str={book[0]?.volumeInfo.description}/>
+        <Description str={book.volumeInfo.description}/>
       </div>
     </>
   );

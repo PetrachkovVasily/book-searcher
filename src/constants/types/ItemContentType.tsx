@@ -18,5 +18,5 @@ export type ItemContentProps = {
       publisher: string
       title: string
     }
-  }[]
+  }
 }

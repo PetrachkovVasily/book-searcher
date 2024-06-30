@@ -1,11 +1,9 @@
 export type PageCardProps = {
   id: string;
-  info: {
-    authors: string[];
-    categories: {
-      [index: number]: string;
-    }
-    comicsContent: true
+  volumeInfo: {
+    authors: string[]
+    categories: string[]
+    comicsContent: boolean
     description: string
     imageLinks: {
       smallThumbnail: string

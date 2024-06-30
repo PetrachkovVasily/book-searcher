@@ -10,7 +10,7 @@ export function BookListPage({books}: BookListPageProps) {
       <div className={classes.pageCards}>
         {
           books.map((item) => {
-            return <PageCard key={item.id} id={item.id} info={item.volumeInfo}/>;
+            return <PageCard key={item.id} id={item.id} volumeInfo={item.volumeInfo}/>;
           })
         }
       </div>

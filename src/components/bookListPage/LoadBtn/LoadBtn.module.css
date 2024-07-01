@@ -1,0 +1,18 @@
+.laodMoreBtn {
+  border: none;
+  color: var(--bg_grey);
+  background-color: var(--grey);
+  font-size: 18px;
+  font-weight: bold;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+  .laodMoreBtn {
+    font-size: 15px;
+  }
+}

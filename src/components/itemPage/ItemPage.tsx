@@ -10,7 +10,6 @@ export function ItemPage() {
 
   useEffect(() => {
     getBooksByID(id).then((item) => {
-      // item = [item]
       setBook(item)
     })
   }, [id])
@@ -19,7 +18,7 @@ export function ItemPage() {
     <main className={classes.itemPage}>
       <div className={classes.pageContainer}>
         {book===undefined
-          ? <h2>qwerty</h2>
+          ? <h2>Loading...</h2>
           : <ItemContent book={book}/>
         }
       </div>

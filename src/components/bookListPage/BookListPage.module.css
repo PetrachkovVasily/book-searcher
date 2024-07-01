@@ -22,14 +22,14 @@
   padding-right: 24px;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-column-gap: 48px;
+  grid-column-gap: 38px;
   grid-row-gap: 38px;
 }
 
 @media screen and (max-width: 990px) {
   .pageCards {
     grid-template-columns: repeat(3, auto);
-    grid-column-gap: 30px;
+    grid-column-gap: 24px;
     grid-row-gap: 24px;
   }
 }
@@ -51,7 +51,13 @@
     padding-left: 14px;
     padding-right: 14px;
       
-    grid-column-gap: 24px;
+    grid-column-gap: 12px;
     grid-row-gap: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .pageCards {
+    grid-template-columns: repeat(1, auto);
   }
 }

@@ -48,3 +48,10 @@ body .PageCard_card__o75Hh .Book_book__9osoc {
     height: 42.62vw;
   }
 }
+
+@media screen and (max-width: 380px) {
+  body .PageCard_card__o75Hh .Book_bookImg__HhjST {
+    width: 44.28vw;
+    height: 63.93vw;
+  }
+}

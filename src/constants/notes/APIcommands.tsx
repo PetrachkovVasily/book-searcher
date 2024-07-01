@@ -6,3 +6,6 @@ export const API_KEY = 'AIzaSyAIKiUMjuQ7GkE3gp0YWAx1nSQpkyZqHvk';
 export const ALL = 'all';
 export const KEY = 'key=';
 export const QUESTION = '?';
+export const MAX = '&maxResults='
+export const ORDER_BY = '&orderBy='
+export const IN_TITLE = 'intitle='

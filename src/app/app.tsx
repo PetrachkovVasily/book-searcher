@@ -13,7 +13,7 @@ export function App() {
   const [books, setBooks] = useState([])
 
   useEffect(() => {
-    getBooks('a', 'b').then((items) => {
+    getBooks().then((items) => {
       setBooks(items)
     })
   }, [])
@@ -27,7 +27,7 @@ export function App() {
       path: ITEM_PATH + ID,
       element: <ItemPage/>,
     },
-]);
+  ]);
 
   return (
     <div>

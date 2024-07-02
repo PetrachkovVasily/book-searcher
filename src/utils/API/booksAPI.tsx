@@ -22,7 +22,6 @@ export async function getBooks() {
     }
     finalResult = finalResult.filter((item: PageCardProps, index: number, arr: []) => index === arr.findIndex((element: PageCardProps) => element.id === item.id))
     length = finalResult.length
-    console.log(startIndex); 
   }
   
   

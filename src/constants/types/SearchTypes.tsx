@@ -1,9 +1,6 @@
 export interface SearchState {
   searchLine: string;
-  category: string;
-  sortParams: string;
-  loading: boolean;
-  error: null | string;
+  [index: string]: string;
 }
 
 export interface searchAction {

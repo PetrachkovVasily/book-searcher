@@ -1,8 +1,10 @@
-import { applyMiddleware, createStore } from "redux";
-import { thunk } from "redux-thunk";
-import { rootReducer } from "./reducers";
-import { configureStore } from "@reduxjs/toolkit";
-import { searchReducer } from "./reducers/searchReducer";
-
-
-//export const store = configureStore()
+import {combineReducers, legacy_createStore as createStore } from 'redux'; 
+import { searchReducer } from './reducers/searchReducer';
+ 
+const rootReducer = combineReducers({ 
+    search: searchReducer, 
+}) 
+   
+export const store = createStore(rootReducer) 
+ 
+export type RootState = ReturnType<typeof rootReducer>

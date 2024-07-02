@@ -11,8 +11,8 @@ export function Header() {
         <div className={classes.searchBlock}>
           <SearchBar/>
           <div className={classes.sortBlock}>
-            <SearchParams name={CATEGORIES_NAME} params={CATEGORIES}/>
-            <SearchParams name={SORTS_NAME} params={SORTS}/>
+            <SearchParams name={CATEGORIES_NAME} sort={'category'} params={CATEGORIES}/>
+            <SearchParams name={SORTS_NAME} sort={'sortParams'} params={SORTS}/>
           </div>
         </div>
       </div>

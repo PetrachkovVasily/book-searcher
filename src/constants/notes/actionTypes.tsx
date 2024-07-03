@@ -1,3 +1,8 @@
 export const SEARCH_LINE = 'SEARCH_LINE'
 export const CATEGORY = 'CATEGORY'
 export const SORT_PARAMS = 'SORT_PARAMS'
+export const ADD_LIST = 'ADD_LIST'
+export const CHANGE_LIST = 'CHANGE_LIST'
+export const INCREASE = 'INCREASE'
+export const DECREASE = 'DECREASE'
+export const CHANGE_LOAD = 'CHANGE_LOAD'

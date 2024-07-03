@@ -7,5 +7,8 @@ export const ALL = 'all';
 export const KEY = 'key=';
 export const QUESTION = '?';
 export const MAX = '&maxResults='
-export const ORDER_BY = '&orderBy='
+export const ORDER_BY = 'orderBy='
 export const IN_TITLE = 'intitle='
+export const SUBJECT = 'subject:'
+export const PLUS = '+'
+export const START_INDEX = '&startIndex='

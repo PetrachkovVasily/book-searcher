@@ -9,7 +9,7 @@ export function ItemContent({book}: ItemContentProps) {
   return (
     <>
       <div className={classes.imgContainer}>
-        <Book str={book.volumeInfo.imageLinks.thumbnail}/>
+        <Book str={book.volumeInfo.imageLinks?.thumbnail}/>
       </div>
       <div className={classes.descriptionContainer}>
         <Categories categories={book.volumeInfo.categories}/>

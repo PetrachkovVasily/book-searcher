@@ -20,3 +20,11 @@
   outline: none;
   font-size: 24px;
 }
+
+.searchBtn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}

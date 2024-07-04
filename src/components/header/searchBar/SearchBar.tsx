@@ -1,4 +1,4 @@
-import { SEARCH } from 'src/constants/notes/elements';
+import { SEARCH } from 'src/constants/notes/Elements';
 import classes from './SearchBar.module.css'
 import { useTypeSelector } from 'src/hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';

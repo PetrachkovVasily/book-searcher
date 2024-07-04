@@ -1,12 +1,15 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import BookListPage from 'src/components/bookListPage/BookListPage';
 import Header from 'src/components/header/Header';
+import ItemPage from 'src/components/itemPage/ItemPage';
 import { getBooks } from 'src/utils/API/booksAPI';
 
-import { RouterProvider } from 'react-router-dom'; 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
 import { useEffect, useRef } from 'react';
+import { HOME_PATH, ID, ITEM_PATH } from 'src/constants/notes/routesPath';
 import { useTypeSelector } from 'src/hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
 import { CHANGE_LIST, CHANGE_LOAD, INCREASE } from 'src/constants/notes/actionTypes';
-import { router } from 'src/routes/routes';
 
 export function App() {
 
@@ -24,6 +27,18 @@ export function App() {
       })
     }
   }, [])
+  
+
+  const router = createBrowserRouter([
+    {
+      path: HOME_PATH,
+      element: <BookListPage books={state.books.books}/>,
+    },
+    {
+      path: ITEM_PATH + ID,
+      element: <ItemPage/>,
+    },
+  ]);
 
   return (
     <div>

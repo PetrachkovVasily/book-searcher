@@ -3,10 +3,10 @@ import Loading from '../loading/Loading';
 import classes from './BookListPage.module.css'
 import LoadBtn from './LoadBtn/LoadBtn';
 import PageCard from './PageCard/PageCard';
+import { BookListPageProps } from 'src/constants/types/BookListPageProps';
 
-export function BookListPage() {
+export function BookListPage({books}: BookListPageProps) {
   const state = useTypeSelector(state => state)
-  const books = state.books.books
   return (
     <main className={classes.bookListPage}>
       {books[0] == undefined

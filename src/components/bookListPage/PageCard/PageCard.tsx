@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { PageCardProps } from 'src/constants/types/PageCardType';
 import Authors from '../Authors/Authors';
 import { ITEM_PATH } from 'src/constants/notes/routesPath';
-import { EMPTY_STR } from 'src/constants/notes/Elements';
+import { EMPTY_STR } from 'src/constants/notes/elements';
 
 export function PageCard({id, volumeInfo}: PageCardProps) {
   return (

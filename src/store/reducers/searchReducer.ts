@@ -1,4 +1,4 @@
-import { EMPTY_STR } from "src/constants/notes/Elements"
+import { EMPTY_STR } from "src/constants/notes/elements"
 import { CATEGORY, SEARCH_LINE, SORT_PARAMS } from "src/constants/notes/actionTypes"
 import { CATEGORIES, SORTS } from "src/constants/notes/categories"
 import { SearchState, searchAction } from "src/constants/types/SearchTypes"

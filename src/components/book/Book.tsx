@@ -1,4 +1,4 @@
-import { BOOK_IMAGE } from 'src/constants/notes/Elements';
+import { BOOK_IMAGE } from 'src/constants/notes/elements';
 import classes from './Book.module.css'
 import { StringType } from 'src/constants/types/StringType';
 

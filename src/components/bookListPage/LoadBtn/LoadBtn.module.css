@@ -11,8 +11,8 @@
   cursor: pointer;
 }
 
-.laodMoreBtn.disabled {
-  background-color: var(--bg_grey);
+.disabled {
+  background-color: var(--light_grey);
 }
 
 @media screen and (max-width: 730px) {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { AMPERSAND, API_KEY, API_LINK, KEY, MAX, ORDER_BY, PLUS, QUESTION, Q_PARAM, SLASH, START_INDEX, SUBJECT } from "src/constants/notes/APIcommands";
-import { EMPTY_STR } from "src/constants/notes/Elements";
+import { EMPTY_STR } from "src/constants/notes/elements";
 import { CATEGORIES } from "src/constants/notes/categories";
 import { AMOUNT } from "src/constants/notes/numOnstants";
 import { SearchState } from "src/constants/types/SearchTypes";
@@ -29,6 +29,9 @@ export async function getBooks(startIndex: StartIndexType, search: SearchState) 
 
   startIndex.startIndex += AMOUNT
   startIndex.total = response.data.totalItems
+  if (startIndex.total <= 30) {
+    startIndex.isLoadable = false
+  }
   return {finalResult, startIndex};
 }
 

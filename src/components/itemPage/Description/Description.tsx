@@ -1,6 +1,6 @@
 import { StringType } from 'src/constants/types/StringType';
 import classes from './Description.module.css'
-import { EMPTY_STR } from 'src/constants/notes/Elements';
+import { EMPTY_STR } from 'src/constants/notes/elements';
 
 export function Description({str}: StringType) {
 

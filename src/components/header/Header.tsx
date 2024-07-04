@@ -2,7 +2,7 @@ import { CATEGORIES, CATEGORIES_NAME, SORTS, SORTS_NAME } from 'src/constants/no
 import classes from './Header.module.css'
 import SearchBar from './searchBar/SearchBar';
 import SearchParams from './searchParams/SearchParams';
-import { CATEGORY_SORT, REVEALANCE_SORT } from 'src/constants/notes/Elements';
+import { CATEGORY_SORT, REVEALANCE_SORT } from 'src/constants/notes/elements';
 
 export function Header() {
   return (

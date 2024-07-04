@@ -4,7 +4,7 @@ import { useTypeSelector } from 'src/hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
 import { CATEGORY, CHANGE_LIST, CHANGE_LOAD, DECREASE, INCREASE, SORT_PARAMS } from 'src/constants/notes/actionTypes';
 import { getBooks } from 'src/utils/API/booksAPI';
-import { CATEGORY_SORT } from 'src/constants/notes/Elements';
+import { CATEGORY_SORT } from 'src/constants/notes/elements';
 
 export function SearchParams({name, sort, params}: SearchParamsProps) {
   

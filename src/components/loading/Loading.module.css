@@ -1,0 +1,10 @@
+.loadIndicator {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.loadContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

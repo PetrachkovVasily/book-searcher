@@ -4,11 +4,12 @@ import { useTypeSelector } from "src/hooks/useTypeSelector";
 import { useDispatch } from "react-redux";
 import { getBooks } from "src/utils/API/booksAPI";
 import { ADD_LIST, CHANGE_LOAD, INCREASE } from "src/constants/notes/actionTypes";
-import { PageCardProps } from "src/constants/types/PageCardType";
+import { useState } from "react";
 
 export function LoadBtn() {
   const state = useTypeSelector(state => state)
-  const dispatch = useDispatch()  
+  const dispatch = useDispatch()
+  const [btnColor, setBtnColor] = useState('#555555')
 
   function loadMore() {
     if (state.startIndex.isLoadable) {

@@ -5,7 +5,7 @@ import ItemPage from 'src/components/itemPage/ItemPage';
 import { getBooks } from 'src/utils/API/booksAPI';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { HOME_PATH, ID, ITEM_PATH } from 'src/constants/notes/routesPath';
 import { useTypeSelector } from 'src/hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
@@ -15,13 +15,17 @@ export function App() {
 
   const state = useTypeSelector(state => state)
   const dispatch = useDispatch()
+  const isDataRequested = useRef(false)
 
   useEffect(() => {
-    getBooks(state.startIndex, state.search).then((items) => {
-      dispatch({type: CHANGE_LIST, payload: items.finalResult})
-      dispatch({type: INCREASE, payload: items.startIndex})
-      dispatch({type: CHANGE_LOAD, payload: items.startIndex})
-    })
+    if (!isDataRequested.current) {
+      isDataRequested.current = true;
+      getBooks(state.startIndex, state.search).then((items) => {
+        dispatch({type: CHANGE_LIST, payload: items.finalResult})
+        dispatch({type: INCREASE, payload: items.startIndex})
+        dispatch({type: CHANGE_LOAD, payload: items.startIndex})
+      })
+    }
   }, [])
   
 

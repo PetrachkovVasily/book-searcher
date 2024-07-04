@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.laodMoreBtn.disabled {
+  background-color: var(--bg_grey);
+}
+
 @media screen and (max-width: 730px) {
   .laodMoreBtn {
     font-size: 15px;

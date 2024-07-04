@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { PageCardProps } from 'src/constants/types/PageCardType';
 import Authors from '../Authors/Authors';
 import { ITEM_PATH } from 'src/constants/notes/routesPath';
+import { EMPTY_STR } from 'src/constants/notes/Elements';
 
 export function PageCard({id, volumeInfo}: PageCardProps) {
   return (
@@ -13,20 +14,20 @@ export function PageCard({id, volumeInfo}: PageCardProps) {
         <h3 className={classes.decoratedDescription}>
           {
             volumeInfo.categories===undefined
-            ? ''
+            ? EMPTY_STR
             : volumeInfo.categories[0]
           }
         </h3>
         <h3 className={classes.bookName}>
           {
             volumeInfo.title===undefined
-            ? ''
+            ? EMPTY_STR
             : volumeInfo.title
           }
         </h3>
         {
           volumeInfo.authors===undefined
-          ? ''
+          ? EMPTY_STR
           : <Authors authors={volumeInfo.authors}/>
         }
       </div>

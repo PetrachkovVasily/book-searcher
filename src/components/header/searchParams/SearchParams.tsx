@@ -2,18 +2,19 @@ import { SearchParamsProps } from 'src/constants/types/SearchParamsProps';
 import classes from './SearchParams.module.css'
 import { useTypeSelector } from 'src/hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
-import { ADD_LIST, CATEGORY, CHANGE_LIST, CHANGE_LOAD, DECREASE, INCREASE, SORT_PARAMS } from 'src/constants/notes/actionTypes';
+import { CATEGORY, CHANGE_LIST, CHANGE_LOAD, DECREASE, INCREASE, SORT_PARAMS } from 'src/constants/notes/actionTypes';
 import { getBooks } from 'src/utils/API/booksAPI';
+import { CATEGORY_SORT } from 'src/constants/notes/Elements';
 
 export function SearchParams({name, sort, params}: SearchParamsProps) {
   
   const state = useTypeSelector(state => state)
   const dispatch = useDispatch()
-  const decreseValue = {startIndex: 0, isLoadable: true}
+  const decreseValue = {startIndex: 0, isLoadable: true, total: state.startIndex.total}
   const options = state.search
 
   function selectHandler(event: any) {
-    if (sort == 'category') {
+    if (sort == CATEGORY_SORT) {
       dispatch({type: CATEGORY, payload: event.target.value})
       options.category = event.target.value
     } else {

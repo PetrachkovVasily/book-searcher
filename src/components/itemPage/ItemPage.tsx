@@ -3,6 +3,7 @@ import classes from './ItemPage.module.css'
 import { useEffect, useState } from 'react';
 import { getBooksByID } from 'src/utils/API/booksAPI';
 import ItemContent from './ItemContent/ItemContent';
+import Loading from '../loading/Loading';
 
 export function ItemPage() {
   const {id} = useParams();
@@ -18,7 +19,7 @@ export function ItemPage() {
     <main className={classes.itemPage}>
       <div className={classes.pageContainer}>
         {book===undefined
-          ? <h2>Loading...</h2>
+          ? <Loading/>
           : <ItemContent book={book}/>
         }
       </div>

@@ -17,9 +17,7 @@ export async function getBooks(startIndex: StartIndexType, search: SearchState) 
   if (search.searchLine == EMPTY_STR) {
     keyWord = EMPTY_STR
   }
-  console.log(API_LINK + Q_PARAM + keyWord + subjectValue + ORDER_BY + search.sortParams + MAX + AMOUNT + START_INDEX + startIndex.startIndex + AMPERSAND + KEY + API_KEY)
   const response = await axios.get(API_LINK + Q_PARAM + keyWord + subjectValue + ORDER_BY + search.sortParams + MAX + AMOUNT + START_INDEX + startIndex.startIndex + AMPERSAND + KEY + API_KEY); 
-  console.log(response);
   if (response.data.items == undefined) {
     startIndex.isLoadable = false
     return {finalResult: [], startIndex}
@@ -29,6 +27,9 @@ export async function getBooks(startIndex: StartIndexType, search: SearchState) 
 
   startIndex.startIndex += AMOUNT
   startIndex.total = response.data.totalItems
+  if (startIndex.total <= AMOUNT) {
+    startIndex.isLoadable = false
+  }
   return {finalResult, startIndex};
 }
 
